@@ -1,0 +1,5 @@
+build/
+Payload/
+*.ipa
+exespiel.xcodeproj/
+Info.plist

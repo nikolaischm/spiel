@@ -1,0 +1,40 @@
+name: exespiel
+options:
+  bundleIdPrefix: de.retrochat
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  exespiel:
+    type: application
+    platform: iOS
+    sources:
+      - Sources
+      - Resources
+    scheme: {}
+    settings:
+      base:
+        PRODUCT_NAME: exespiel
+        PRODUCT_BUNDLE_IDENTIFIER: de.retrochat.exespiel
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "1"
+        SWIFT_VERSION: "5.0"
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_BITCODE: NO
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: exespiel
+        LSRequiresIPhoneOS: true
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UIUserInterfaceStyle: Light
+        UIRequiresFullScreen: true
+        UIStatusBarHidden: true
+        ITSAppUsesNonExemptEncryption: false

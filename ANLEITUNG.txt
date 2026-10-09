@@ -1,0 +1,52 @@
+EXESPIEL (Spielhalle) fürs iPhone – genau wie beim CHAT
+=============================================
+
+A) APP BAUEN LASSEN (ca. 5–10 Minuten)
+---------------------------------------
+1. Auf https://github.com oben rechts "+" -> "New repository".
+   Name z.B. "spielhalle-app", "Private" auswählen, "Create repository".
+2. Auf der neuen Seite auf "uploading an existing file" klicken.
+3. Den Inhalt dieser ZIP (entpackt) ins Browserfenster ziehen:
+   die Ordner "Sources", "Resources", ".github" und die Datei "project.yml".
+   Unten auf "Commit changes".
+
+   WICHTIG: Prüf danach, ob der Ordner ".github" mit hochgeladen wurde.
+   Falls nicht (Windows versteckt manchmal Ordner mit Punkt):
+     "Add file" -> "Create new file", als Namen genau
+         .github/workflows/build.yml
+     eintippen, den Inhalt der Datei build.yml (liegt in der ZIP ganz oben)
+     hineinkopieren, "Commit changes".
+
+4. Reiter "Actions": dort läuft "exespiel-App bauen"
+   (gelber Punkt = läuft, grüner Haken = fertig).
+   Falls nichts läuft: links "exespiel-App bauen" -> "Run workflow".
+5. Grüner Haken: den Lauf anklicken, unten bei "Artifacts" auf
+   "exespiel-ipa" klicken -> ZIP mit exespiel.ipa, entpacken.
+
+   Roter Haken? Lauf anklicken, roten Schritt aufklappen und mir die
+   Fehlermeldung schicken.
+
+
+B) AUFS IPHONE (wie beim CHAT mit Sideloadly)
+----------------------------------------------
+1. iPhone per Kabel an den PC, Sideloadly öffnen.
+2. exespiel.ipa ins Fenster ziehen, Apple-ID eintragen, "Start".
+3. Falls nötig auf dem iPhone: Einstellungen -> Allgemein ->
+   VPN & Geräteverwaltung -> deine Apple-ID -> "Vertrauen".
+   (Entwicklermodus ist vom CHAT schon an.)
+
+
+GUT ZU WISSEN
+-------------
+- Gleiche Raumnummer = gleicher Raum: iPhone-App, Spielhalle.exe und die
+  Website spielen alle zusammen.
+- Steuerung am iPhone: Rennen mit Knöpfen (links lenken, rechts Gas/Bremse,
+  oben START) – am besten das iPhone quer halten.
+  Pong: Finger auf dem Spielfeld hoch/runter ziehen.
+  Snake: wischen oder die Pfeil-Knöpfe.
+- Kostenlose Apple-ID: App läuft 7 Tage, dann mit Sideloadly neu
+  aufspielen (oder Auto-Refresh nutzen).
+  Achtung: Mit kostenloser Apple-ID sind höchstens 3 eigene Apps
+  gleichzeitig installiert – CHAT + Spielhalle passt.
+- Geht die App in den Hintergrund, ist man kurz "weg" und beim
+  Zurückkommen automatisch wieder im Raum.
